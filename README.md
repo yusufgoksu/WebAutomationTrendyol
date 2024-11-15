@@ -56,13 +56,21 @@ Download the appropriate WebDriver for your browser (e.g., ChromeDriver for Chro
 5. **Project Structure**  
    ```bash
                                                                           WebAutomationTrendyol/
-               ├── src/main/java
-               │   └── utils/              # Utility classes for reusable code
-               ├── src/test/java
-               │   ├── tests/              # Test cases for login, search, favorites, etc.
-               │   └── base/               # Base classes for test setup
-               ├── config.properties       # Configuration file for the test parameters
-               └── pom.xml                 # Maven configuration file
+               WebAutomationTrendyol/
+              ├── src/main/java
+              │   ├── base/               # BaseLib class for shared functions and setup
+              │   ├── pages/              # Page Object Model classes
+              │   │   ├── HomePage.java   # Represents the homepage and its interactions
+              │   │   ├── ProductPage.java # Represents the product page and its interactions
+              │   │   ├── LoginPage.java  # Represents the login page and its interactions
+              │   │   └── ProductListingPage.java # Represents the product listing page and its interactions
+              │   └── utils/              # Utility classes for reusable code
+              ├── src/test/java
+              │   ├── tests/              # Test cases for login, search, favorites, etc.
+              │   └── base/               # Base classes for test setup
+              ├── config.properties       # Configuration file for test parameters
+              └── pom.xml                 # Maven configuration file
+
 ## Test Cases
 
 1. **Login Test**  
